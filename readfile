@@ -1,0 +1,15 @@
+#!/bin/bash
+
+OLDIFS=$IFS
+
+IFS=","
+
+while read a b c d
+do
+  echo "First arg: $a"
+	echo "Second arg: $b"
+	echo "Third arg: $c"
+	echo "Fourth arg: $d"
+done < test_file1
+
+IFS=$OLDIFS

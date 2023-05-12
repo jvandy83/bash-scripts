@@ -1,0 +1,12 @@
+#!/bin/bash
+
+username="Derek"
+
+echo "${name}'s toy"
+
+samp_string="The dog climbed the tree"
+echo "${samp_string//dog/cat}"
+
+# If $name does not exist then you can add this 
+# expansion syntax to create variable on the fly
+echo "I am ${name:-Derek}"
